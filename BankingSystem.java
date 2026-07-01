@@ -142,7 +142,7 @@ public class BankingSystem {
 
     private static void startVerificationServer() {
         try {
-            HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+            HttpServer server = HttpServer.create(new InetSocketAddress(8099), 0);
             server.createContext("/dashboard", new DashboardHandler());
             server.setExecutor(null); 
             server.start();
